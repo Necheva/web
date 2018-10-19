@@ -1,7 +1,7 @@
 console.clear();
 //ввод и результат, который передаем в document.body
-var $input = $('<input type="search" />').appendTo(getElementsByClassName('result')),
-    $results = $('<div class="results" />').appendTo(getElementsByClassName('result'));
+var $input = $('<input type="search" />').appendTo(document.body),
+    $results = $('<div class="results" />').appendTo(document.body);
 $input.val('sia');
 function fetch(term)
 {
