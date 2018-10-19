@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Press+Start+2P');
+
+body{
+  height: 100%;
+  background: url(stardust.png);
+  font-family: "Press Start 2P";
+}
+
+input
+{
+  display: block;
+  padding: 1em;
+  width: 700px;
+  margin: auto;
+}
+
+#cap
+{
+  height: 113px;
+}
+
+h1
+{
+  text-align: center;
+  font-size: 50px;
+  color: #598;
+  position:relative;
+  top: 22px;
+  font-weight: bold;
+}
+
+#information
+{
+  height: 450px;
+}
+.results
+{
+  padding: 0;
+  margin : 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  display: -webkit-box;  /* Safari 3.1 - 6, Chrome < 21 (2009 Spec), UC Browser Android */
+  display: -moz-box;      /* Firefox 2 - 27 (2009 Spec), UC Mini */
+  display: -ms-flexbox;  /* IE10 (2012 Syntax) */
+  display: -webkit-flex;  /* Safari 6.1 - 8, Android < 4.4, BB < 10, Chrome 21 - 28 */
+}
+
+.result
+{
+  padding : 5px;
+  width: 150px;
+  height: 150px;
+  margin-top: 10px;
+}
