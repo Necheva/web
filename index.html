@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="main.less">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="main.js"></script>
 </head>
 <body>
     <section id="cap">
@@ -17,9 +19,17 @@
           <form>
               <p>
                   <input type="search" name="q" placeholder="Поиск по исполнителю">
-                  <input type="submit" value="Найти">
+                  <input type="submit" value="search" OnClick="fetch();">
               </p>
           </form>
         </div>
+        <div class="results">
+            <div class="result">
+              <span class="result__text"></span>
+              <span class="artist-name"></span>
+              <span class="track-name"></span>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
