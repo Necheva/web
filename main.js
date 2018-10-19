@@ -2,7 +2,7 @@ console.clear();
 //ввод и результат, который передаем в document.body
 var $input = $('<input type="search" />').appendTo(document.body),
     $results = $('<div class="results" />').appendTo(document.body);
-$input.val('sia');
+$input.val('justice');
 function fetch(term)
 {
   //формируем ajax запрос
@@ -15,7 +15,7 @@ function fetch(term)
       {
         term: term,
         entity: 'song',
-        limit: 24,
+        limit: 12,
         explicit: 'No'
       },
       method: 'GET',
@@ -25,7 +25,7 @@ function fetch(term)
         $results.empty();
         $.each(data.results,function(i,result)
         {
-          if ( i > 23 )
+          if ( i > 11 )
           {
             return false;
           }
