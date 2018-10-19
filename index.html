@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="main.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="main.js"></script>
 </head>
 <body>
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js">
+   </script>
     <section id="cap">
         <header>
             <h1>
@@ -14,22 +14,15 @@
             </h1>
         </header>
     </section>
-    <section id="information">
-        <div class="SearchLine">
-          <form>
-              <p>
-                  <input type="search" name="q" placeholder="Поиск по исполнителю">
-                  <input type="submit" value="search" OnClick="fetch();">
-              </p>
-          </form>
+    <script src="main.js"></script>
+    <div class="results">
+      <a class="result" href="https://itunes.apple.com" target="_blank" >
+        <div class="result__text">
+          <span class="artist-name"></span>
+          <span class="track-name"></span>
         </div>
-        <div class="results">
-            <div class="result">
-              <span class="result__text"></span>
-              <span class="artist-name"></span>
-              <span class="track-name"></span>
-            </div>
-        </div>
-    </section>
+      </a>
+    </div>
 </body>
 </html>
+
